@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div11"> hiiiiii<span class="span11">this is div</span> </div>
+    <h1 id="heading"> this is h1 tag  <!-- this is coment line--> </h1> 
+
+    <p id="pid">THis is old value</p>
+    <h2 id="heading2">this is heading2</h2>
+    <script>
+//         document.write("------------Document <br> <br>")
+//  document.write(document.nodeName + "<br>");
+//  document.write(document.nodeType + "<br>");
+//  document.write(document.nodeValue + "<br>");
+
+
+//   document.write("------------Element <br> <br>")
+//   var result_pawan = document.getElementById("heading");
+//   document.write(result_pawan.nodeName + "<br>");
+//   document.write(result_pawan.nodeType + "<br>");
+//   document.write(result_pawan.nodeValue + "<br>");
+
+
+//  document.write("------------text <br> <br>")
+//  var result_pawan = document.getElementById("heading");
+//  document.write(result_pawan.firstChild. nodeName + "<br>");
+//  document.write(result_pawan.firstChild.nodeType + "<br>");
+//  document.write(result_pawan.firstChild.nodeValue + "<br>");
+
+ document.write("------------text <br> <br>")
+ var result_pawan = document.getElementById("heading");
+ document.write(result_pawan.firstChild.nextSibling. nodeName + "<br>");
+ document.write(result_pawan.firstChild.nextSibling.nodeType + "<br>");
+ document.write(result_pawan.firstChild.nextSibling.nodeValue + "<br>");
+
+
+//  document.getElementById("pid").firstChild.nodeValue = "This is new value" ;
+ 
+var pawan = document.getElementById("heading2");
+var pawan2 = pawan.firstChild. nodeValue="This is updated value";
+console.log(pawan2);
+</script>
+
+</body>
+</html>

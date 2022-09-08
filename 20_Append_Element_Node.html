@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Div_id">
+        existing element move in another tag
+        check in console
+        <h1 id="heading">Heading Tag</h1>
+    </div>
+    <span id="span_id">
+    
+    </span>
+    <script>
+      var result =  document.getElementById("Div_id");
+      console.log(result);
+      var result_span = document.getElementById("span_id");
+      console.log(result_span);
+      var result_heading = document.getElementById("heading");
+      result_span.appendChild(result);
+    </script>
+</body>
+</html>

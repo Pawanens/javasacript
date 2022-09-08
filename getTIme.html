@@ -1,0 +1,67 @@
+<html>		
+	<head>
+		
+	</head>
+
+	<body>
+		<h1 id="tar" align="center"></h1>	
+        <h1 id="name"></h1>	
+		
+		<script>
+			
+			clock();
+			setInterval(clock,1000);
+		
+			function clock()
+			{
+				var d = new Date();
+				var hr = d.getHours();
+				var min = d.getMinutes();
+				var sec = d.getSeconds();
+				var mer = "AM";
+				
+				if(hr>12)
+				{
+					hr = hr - 12;
+					mer = "PM";
+				}
+				
+				if(hr<10)
+				{
+					hr = "0"+hr;
+				}
+				
+				if(min<10)
+				{
+					min = "0"+min;
+				}
+				
+				if(sec<10)
+				{
+					sec = "0"+sec;
+				}
+				
+				var t = hr+":"+min+":"+sec+mer;
+
+				document.getElementById('tar').innerHTML = t;
+				
+			}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

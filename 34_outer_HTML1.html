@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="main_Div">
+         <div id ="inner_mian_Div">
+                  <h1>THis is heading tag</h1>
+                  <h2>THis  is h2 tag </h2>
+                  <h3>THis is h3 tag</h3>
+         </div>
+    </div>
+    <script>
+      var reslut =   document.getElementById("inner_mian_Div");
+      var main_Div = document.getElementById("main_Div");
+      reslut.outerHTML = "<div> <h1> THis HTML tag is added by js </h1></div>";
+      var reslut =   document.getElementById("inner_mian_Div");
+     console.log(main_Div);
+    </script>
+</body>
+</html>

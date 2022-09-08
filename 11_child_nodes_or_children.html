@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="myid">
+  <div id="myDiv">
+  <h1>
+ 
+  <!-- this is comment line --> 
+  We are learning about childNodes or Choldren </h1>
+<p id="firstp">
+  This is paragraph </p>
+<p id="secondp"><sapn>THis is span</sapn> This is second Paragraph</p>
+<div id="pawan">  hiiiii <p>THis is hello heading</p></div>
+</div>
+<script>
+  var result = document.getElementById("myDiv");
+  // console.log(result.childNodes);
+  // console.log(result.childNodes [1]);
+  // console.log(result.children);
+
+  var child_nodes = result.children.length;
+  console.log(child_nodes);
+
+  for(let i = 0; i<child_nodes; i++){
+    var result1 = document.getElementById("myDiv");
+    console.log(result1.children[i]);
+    document.write(result1.children[i] .textContent + "<br>");
+  }
+</script>
+
+
+</body>
+</html>

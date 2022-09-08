@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 class="heading">This is First H1</h1>
+ <h1 class="heading" >This is Second H1</h1>
+ <p id="para">this is para</p>
+name<input type="text" class="inputform">
+name<input type="text" class="inputform">
+
+
+<button id="btn">Click Here</button>
+<br>
+
+ <script>
+document.getElementById("btn").onclick =function(){
+   var user_name  = document.getElementsByClassName("inputform");
+   var data=user_name.length;
+for(let i=0; i<data; i++)
+   {
+    var user_nameval = user_name[i].value;
+    if (user_nameval == "" || user_nameval== null) {
+        alert("Please fill this box");
+    }
+   }
+}
+
+
+ var result = document.getElementsByClassName("heading");
+  var value =  result.length;
+  for(let i=0; i<value; i++)
+   {
+  var result11 = document.getElementsByClassName("heading") [i];
+  var pawan = document.write( result11.textContent + "<br>");
+
+  }
+
+  var result1 = document.getElementsByClassName("heading") [0];
+  result1.style.color="red"
+
+ </script>
+</body>
+</html>

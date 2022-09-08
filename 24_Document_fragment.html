@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="minDiv">
+        <h1>Document Fragmentation</h1>
+    </div>
+
+    <script>
+        // var df = document.createDocumentFragment();
+        // var creath2 = document.createElement("h2");
+        // var creatp = document.createElement("p");
+        // creath2.textContent = "THis is H2 created by Js"; 
+        // creatp.textContent = "THis is P created by Js";
+        // console.log(creath2);
+        // console.log(creatp);
+        // df.appendChild(creath2);
+        // df.appendChild(creatp);
+        // console.log(df);
+        // var result = document.getElementById("minDiv");
+        // result.appendChild(df);
+     
+    //    var  result  =  document.getElementById("minDiv");
+    //    var crh2 =  document.createElement("h2");
+       
+    //    crh2.textContent = "HI pawan how r u ";
+    //    result.appendChild(crh2);
+
+  var df = document.createDocumentFragment();
+  var crelementh2 = document.createElement("h2");
+  var crelementp = document.createElement("p");
+  crelementh2.textContent = "THis is h2 tag is created by js";
+  crelementp.textContent = "THis p tag is created by js";
+  df.appendChild(crelementh2);
+  df.appendChild(crelementp);
+ var result = document.getElementById("minDiv");
+ result.appendChild(df);
+    </script>
+</body>
+</html>

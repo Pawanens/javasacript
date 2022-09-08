@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_Div">
+              <h1>This is about remove node</h1>
+               <h2>This is second heading tag</h2>
+               <h3>This is third heading tag</h3>
+               <h4 id="fourth_heading">THis is fourth heading tag</h4>
+    </div>
+
+
+    <div>
+        <h1>second div first heading</h1>
+        <h2 id="second_heading">second div second heading</h2>
+    </div>
+    <script>
+       var reslut =  document.getElementById("main_Div");
+       var target_node = document.getElementById("fourth_heading");
+    var del_node =  reslut.removeChild(target_node);
+         reslut.removeChild(reslut.firstElementChild);
+         reslut.removeChild(reslut.childNodes[2]);
+
+
+        var reslut2 = document.getElementById("second_heading");
+        reslut2.parentNode.removeChild(reslut2);
+    </script>
+</body>
+</html>

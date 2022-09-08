@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_div">
+        <!-- Hi How r u -->
+        <h1>THis is heading tag</h1>
+        <span>THis is sapn tag</span>
+    </div>
+
+    <script>
+        var result = document.getElementById("main_div");
+        result.firstChild.textContent="first child value";
+        // console.log(result.firstChild);
+        var p = result.firstElementChild.textContent="Hi THis value has been updated";
+        document.write(p);
+    </script>
+</body>
+</html>

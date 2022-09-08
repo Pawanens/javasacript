@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .maindiv{
+            display: flex;
+        }
+        @media (max-width:500px)
+        {
+           p{
+            color:green !important;
+           }
+           
+        }
+        .abc{
+            color: yellow;
+        }
+    </style>
+
+
+
+
+
+<div class="maindiv">
+    <div>
+    <span>Quantity Selector :</span>
+    </div>
+    <div>
+        <span id="plus"><button>+</button></span>
+        <span id="value">0</span>
+        <span id="negative"><button>-</button></span>
+
+    </div>
+
+</div>
+
+<div>
+    <p id="pawan">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illum odit facilis eum quisquam dicta perferendis incidunt, atque facere quasi molestias nostrum, consequuntur aliquid inventore fuga nulla corrupti in minima!</p>
+</div>
+
+
+
+  <script>
+const result = document.getElementById("value");
+document.getElementById("plus").onclick=function(){
+    var plus= result.firstChild.nodeValue;
+   
+    plus++;
+    result.innerHTML=plus;
+}
+
+document.getElementById("negative").onclick=function(){
+    var negative= result.firstChild.nodeValue;
+    
+   if(negative>0)
+   {
+    negative--;
+    result.innerHTML=negative;
+   }
+    
+}
+document.getElementById("pawan").classList.add('abc');
+
+  </script>
+</body>
+</html>

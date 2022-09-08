@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1 id="headingid" class="heading_class">THis is heading Tag</h1>
+
+   <script>
+    var result = document.getElementById("headingid");
+    document.write("Total Atttibutes length "+ result.attributes.length + "<br>" );
+    var attributes_length = result.attributes.length 
+    console.log(attributes_length);
+    //  document.write( result.attributes[0].name + "=");
+    //   document.write( result.attributes[0].value + "<br>");
+    //  document.write( result.attributes[1].name + "=");
+    //  document.write( result.attributes[1].value );
+// for loop
+     for(let i=0; i<result.attributes.length; i++)
+     {
+    document.write(result.attributes[i].name + "=");
+    document.write(result.attributes[i].value + "<br>");
+
+     }
+   
+   </script>
+</body>
+</html>

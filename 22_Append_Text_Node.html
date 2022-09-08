@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="DIv_id">
+        <h1>Append Text Node</h1>
+    </div>
+    <script>
+        // var result = document.getElementById("DIv_id");
+        // var creattext = document.createTextNode("This text is created by JavaScript");
+        // var creatElement = document.createElement("h2");
+        // var creatcmtnode = document.createComment("This comment line is created by js");
+        // creatElement.appendChild(creattext);
+        // creatElement.appendChild(creatcmtnode);
+        // var pawan  =  result.appendChild(creatElement);
+        // console.log(creatElement);
+
+        // console.log(pawan);
+      
+        var result = document.getElementById("DIv_id");
+        var Celement = document.createElement("h2");
+        // var CText =  document. createTextNode("THis text is created by the js");
+        Celement .textContent = "HI pawan how r u "
+        // Celement.appendChild(CText);
+        result.appendChild(Celement);
+        console.log(result);
+   
+
+    </script>
+</body>
+</html>

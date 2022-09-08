@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul id="main_ul_id">
+            <li id="first_li">First li</li>
+            <li id="second_li">Second Li</li>
+            <li id="third_li">Third Li</li>
+            <li id="fourth_li">FOurth LI</li>
+
+        </ul>
+    </div>
+    <script>
+        var result = document.getElementById("main_ul_id");
+        var moveNode = document.getElementById("fourth_li");
+        var refNode = document.getElementById("second_li");
+        result.insertBefore(moveNode , refNode );
+    </script>
+</body>
+</html>

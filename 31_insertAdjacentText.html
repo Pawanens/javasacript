@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_Div">
+        <h1 id="first_h1">This is first h1</h1>
+        <h1 id="second_h1">THis is second H1</h1>
+        <h1 id="third_h1">This is third h1</h1>
+      </div>
+      <script>
+         var result =  document.getElementById("main_Div");
+         var targetNode =  document.getElementById("third_h1");
+         var txt =  "This Text is created by insertAdjacentText"
+         targetNode.insertAdjacentText('beforebegin' , txt);
+         targetNode.insertAdjacentText('afterbegin' , txt);
+         targetNode.insertAdjacentText('beforeend' , txt);
+         targetNode.insertAdjacentText('afterend' , txt);
+        
+         console.log(result);
+      </script>
+</body>
+</html>

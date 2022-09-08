@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="username">
+    <button id="btn">Submit</button>
+    <h1 id="time"></h1>
+    <script>
+         document.getElementById("btn").onclick=function(){
+        var today = new Date();
+        var hours =today.getHours();
+       
+        var value;
+        if(hours < 12)
+        {
+            value ="Good Morning";
+        }
+        else if (hours >= 12 && hours <= 17)
+        {
+            value = 'Good Afternoon';
+        }
+  
+        else if (hours >= 17 && hours <= 24)
+        {
+            value = 'Good Evening';
+        }
+        user_value = document.getElementById("username").value.toUpperCase();
+        document.getElementById("time").innerHTML= "Hi " + user_value + " "+ value;
+   }
+
+    </script>
+</body>
+</html>

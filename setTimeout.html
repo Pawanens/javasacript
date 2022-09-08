@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    
+     <label for="">Enter your Name</label>
+    <input type="text" id="username" onkeypress="myFunction()">
+    
+</form>
+    <button id="btn">submit</button>
+    <br>
+    <span id="alert"></span>
+    <h2 id="hello"></h2>
+    <h1 id="date"></h1>
+
+    <script>
+
+
+  function myFunction() {
+  
+  var x = document.getElementById("alert")
+ x.style.display = "none";
+}
+
+ document.getElementById("btn").onclick=function(){
+    var user_name =document.getElementById("username").value.toUpperCase(); 
+    if (user_name == "" || user_name == null) {
+        document.getElementById("alert").innerHTML="Please fill this box";
+    }
+    else{
+        console.log("pawan :: ",user_name);  
+   
+        function mainfunction()
+        {
+            document.getElementById("hello").innerHTML += user_name +  "Happy Birthday!" + "<br>";
+        }
+        
+        setInterval(mainfunction , 2000)
+    }
+    }
+    </script>
+</body>
+</html>

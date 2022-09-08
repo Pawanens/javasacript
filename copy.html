@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopyToClipboard</title>
+</head>
+<body>
+    <h3>Write your text below:-</h3>
+    <textarea name="textarea" id="" cols="50" rows="10"></textarea> <br>
+    <button  class="movebtn">Move Text</button>
+    <button  class="copybtn">Copy text</button><br>
+    <textarea name="textarea2" id="" cols="50" rows="10" ></textarea>
+
+    <div class="output"></div>
+</body>
+
+<script>
+
+    document.querySelector(".movebtn").addEventListener("click", move);
+    document.querySelector(".copybtn").addEventListener("click", copy);
+
+    function move(){
+       let text =  document.querySelector("textarea[name=textarea]").value
+
+       document.querySelector("textarea[name=textarea2]").value= text;
+    }
+
+    function copy(){
+        let text =  document.querySelector("textarea[name=textarea]").value;
+
+        copytoclipboard(text);
+
+    }
+
+    function copytoclipboard(kuchlega){
+
+        const textarea = document.createElement("textarea");
+        textarea.value=kuchlega;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        document.querySelector(".output").innerHTML ="<h3> Copied Content </h3>"+textarea.value;
+
+    }
+
+</script>
+</html>
